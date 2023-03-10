@@ -19,8 +19,15 @@ const calculateGrade = (percentage) => {
 }
   
 const calculateStatus = (status, comments) => {
-  console.log(status, comments);
-  return "";
+  if (status === "pass" || status === "fail" ) {
+    return status;
+  }
+  
+  if (comments.length > 0) {
+    return "started";
+  }
+  return "todo";
+  
 };
 
 // NOTE: do not edit the export below
