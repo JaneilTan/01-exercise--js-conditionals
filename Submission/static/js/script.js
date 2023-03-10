@@ -1,8 +1,25 @@
 const calculateGrade = (percentage) => {
-  return "";
-};
+  if (percentage < 40) {
+    return "E";
+  }
 
+  if (percentage < 50) {
+    return "D";
+  }
+
+  if (percentage < 65) {
+    return "C";
+  }
+
+  if (percentage < 80) {
+    return "B";
+  }
+
+  return "A";
+}
+  
 const calculateStatus = (status, comments) => {
+  console.log(status, comments);
   return "";
 };
 
